@@ -4,8 +4,8 @@ import {StyleSheet, Text} from "react-native";
 const HomeScreen = () => {
     return (
         <>
-            <Text>list of serivcesss
-            cicd github action test
+            <Text>
+                hello
             </Text>
         </>
     )
