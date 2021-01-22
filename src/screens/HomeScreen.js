@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import ServiceCard from "../components/ServiceCard";
 
-const list = [1, 2, 3]
+const list = [1, 2]
 
 const HomeScreen = () => {
     return (
