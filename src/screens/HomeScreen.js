@@ -1,18 +1,35 @@
 import React from 'react'
-import {StyleSheet, Text} from "react-native";
+import {
+    Button,
+    FlatList,
+    Image,
+    ImageBackground,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View
+} from "react-native";
+import ServiceCard from "../components/ServiceCard";
+
+const list = [1, 2, 3]
 
 const HomeScreen = () => {
     return (
-        <>
-            <Text>
-                hello
-            </Text>
-        </>
+        <View style={styles.container}>
+            <FlatList
+                data={list}
+                renderItem={ServiceCard}
+            />
+        </View>
+
     )
 }
 
 const styles = StyleSheet.create({
-
+    container: {
+        flex: 1
+    }
 })
 
 export default HomeScreen
