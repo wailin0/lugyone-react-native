@@ -1,29 +1,29 @@
 import React from "react";
-import {Button, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import { FontAwesome5 } from '@expo/vector-icons';
+import {StyleSheet, Text, View} from "react-native";
 
-const ServiceCard = () => {
+const ServiceCard = ({icon, text}) => {
     return (
         <View style={styles.container}>
-            <View style={styles.icon}></View>
-            <Text>Profile</Text>
+            <FontAwesome5 name={icon} size={24} color="#F9AD59"
+                          style={{
+                              marginBottom: 10
+                          }}
+            />
+            <Text>{text}</Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    icon: {
-        borderRadius: '50%',
-        backgroundColor: 'yellow',
-        width: 50,
-        height: 50
-    },
     container: {
-        textAlign: 'center',
-        borderRadius: 10,
+        justifyContent: 'center',
+        borderRadius: 17,
         boxShadow: '2px',
+        alignItems: 'center',
         backgroundColor: 'white',
         width: '8rem',
-        height: '8rem'
+        height: '8rem',
     }
 })
 

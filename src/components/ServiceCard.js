@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {Button, StyleSheet, Text, View} from "react-native";
 
 const ServiceCard = () => {
     return (
@@ -23,17 +23,14 @@ const ServiceCard = () => {
 
 const styles = StyleSheet.create({
     container: {
-        marginLeft: '2rem',
-        marginRight: '2rem',
-        marginBottom: '1rem',
         padding: '1rem',
         backgroundColor: 'lightpink',
-        borderRadius: 10
+        borderRadius: 8,
+        marginBottom: 15
     },
     flex: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginBottom: '1rem'
+        justifyContent: 'space-between'
     }
 })
 
